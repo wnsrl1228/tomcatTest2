@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2d368c2-ec06-4aae-8f46-0e77f68d5e7b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/DispatchServelet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/DispatchServelet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webApp/jsp/user/article/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/webApp/jsp/user/article/detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webApp/jsp/user/article/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/webApp/jsp/user/article/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webApp/jsp/user/article/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/webApp/jsp/user/article/write.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +99,7 @@
       <workItem from="1658727093040" duration="27000" />
       <workItem from="1658727253581" duration="3855000" />
       <workItem from="1658811875330" duration="11265000" />
-      <workItem from="1658884824071" duration="3862000" />
+      <workItem from="1658884824071" duration="4906000" />
     </task>
     <servers />
   </component>
@@ -128,13 +121,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleController.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ll/exam/DispatchServelet.java</url>
-          <line>51</line>
+          <line>53</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>

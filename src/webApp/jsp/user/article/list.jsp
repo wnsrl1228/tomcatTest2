@@ -12,7 +12,7 @@
     <% for ( ArticleDto article : articles ) { %>
     <li>
         <a href="/user/article/detail/free/<%=article.getId()%>"><%=article.getId()%>. <%=article.getTitle()%></a>
-        <a href="/user/article/delete/free/<%=article.getId()%>">삭제</a>
+        <a onclick="if (!confirm('정말로 삭제하시겠습니까?')) return false" href="/user/article/delete/free/<%=article.getId()%>">삭제</a>
         <a href="/user/article/modify/free/<%=article.getId()%>">수정</a>
     </li>
 
