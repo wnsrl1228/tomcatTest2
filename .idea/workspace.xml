@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d2d368c2-ec06-4aae-8f46-0e77f68d5e7b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/DispatchServelet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/DispatchServelet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/Rq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/Rq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webApp/jsp/user/article/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/webApp/jsp/user/article/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webApp/jsp/user/article/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/webApp/jsp/user/article/write.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,13 +46,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/lionlike/tomcatTest2/src/webApp/jsp/user/article",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ll.exam.article" />
       <recent name="com.ll.exam.article.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\lionlike\tomcatTest2\src\webApp\jsp\user\article" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\lionlike\tomcatTest2\src" />
@@ -87,7 +96,8 @@
       <workItem from="1658384080183" duration="4312000" />
       <workItem from="1658637873581" duration="2394000" />
       <workItem from="1658727093040" duration="27000" />
-      <workItem from="1658727253581" duration="3152000" />
+      <workItem from="1658727253581" duration="3855000" />
+      <workItem from="1658811875330" duration="11265000" />
     </task>
     <servers />
   </component>

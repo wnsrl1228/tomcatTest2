@@ -27,6 +27,18 @@ public class Rq {
         resp.setContentType("text/html; charset=utf-8");
     }
 
+    public String getParam(String paramName, String defaultValue) {
+        String value = req.getParameter(paramName);
+
+        if (value == null || value.trim().length() == 0) {
+            return defaultValue;
+        }
+        try {
+            return value;
+        } catch (NumberFormatException e) {
+            return defaultValue;
+        }
+    }
     public int getIntParam(String paramName, int defaultValue) {
         String value = req.getParameter(paramName);
 
@@ -62,6 +74,42 @@ public class Rq {
             throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    public String getPath() {
+        return req.getRequestURI();
+    }
+    public String getActionPath() {
+        String[] bits = req.getRequestURI().split("/");
+        return "/%s/%s/%s".formatted(bits[1], bits[2], bits[3]);
+    }
+    public String getMethod(){
+        return req.getMethod();
+    }
+
+    public long getLongPathValueByIndex(int index, long defaultValue) {
+        String value = getPathValueByIndex(index, null);
+
+        if ( value == null ) {
+            return defaultValue;
+        }
+
+        try {
+            return Long.parseLong(value);
+        }
+        catch ( NumberFormatException e ) {
+            return defaultValue;
+        }
+    }
+
+    public String getPathValueByIndex(int index, String defaultValue) {
+        String[] bits = req.getRequestURI().split("/");
+
+        try {
+            return bits[4 + index];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            return defaultValue;
         }
     }
 }

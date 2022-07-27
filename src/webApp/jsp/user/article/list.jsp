@@ -10,6 +10,8 @@
 
 <ul>
     <% for ( ArticleDto article : articles ) { %>
-    <li><%=article.getId()%>. <%=article.getTitle()%></li>
+    <li>
+        <a href="/user/article/detail/free/<%=article.getId()%>"><%=article.getId()%>. <%=article.getTitle()%></a>
+    </li>
     <% } %>
 </ul>
