@@ -50,7 +50,7 @@ public class ArticleController {
         rq.view("user/article/detail");
     }
 
-    public void showDelete(Rq rq) {
+    public void doDelete(Rq rq) {
         long id = rq.getLongPathValueByIndex(1, 0);
 
         if (id == 0) {
@@ -67,32 +67,7 @@ public class ArticleController {
 
         articleService.delete(id);
         rq.appendBody(id+"게시글이 삭제되었습니다.");
-
-    }
-
-    public void doModify(Rq rq) {
-        long id = rq.getLongPathValueByIndex(1, 0);
-
-        if (id == 0) {
-            rq.appendBody("번호를 입력해주세요.");
-            return;
-        }
-
-        ArticleDto articleDto = articleService.findById(id);
-
-        if (articleDto == null) {
-            rq.appendBody("해당 글이 존재하지 않습니다.");
-            return;
-        }
-        String title = rq.getParam("title","");
-        String body = rq.getParam("body","");
-
-        if (title.isEmpty() || body.isEmpty()){
-            rq.appendBody("오류");
-            return;
-        }
-        articleService.modify(id,title,body);
-        rq.appendBody(id+"게시글이 수정되었습니다.");
+        rq.appendBody("<div><a href=\"/user/article/list/free\">리스트로 이동</a></div>");
 
     }
 
@@ -114,4 +89,17 @@ public class ArticleController {
         rq.setAttr("article",articleDto);
         rq.view("user/article/modify");
     }
+    public void doModify(Rq rq) {
+        long id = rq.getLongPathValueByIndex(1, 0);
+        String title = rq.getParam("title","");
+        String body = rq.getParam("body","");
+
+        articleService.modify(id,title,body);
+
+        rq.appendBody(id+"게시글이 수정되었습니다.");
+        rq.appendBody("<div><a href=\"/user/article/detail/free/%d\">수정된 글로 이동</a></div>".formatted(id));
+
+    }
+
+
 }

@@ -56,7 +56,10 @@ public class ArticleRepository {
     }
 
     public static void modify(long id, String title, String body) {
-        ArticleDto articleDto = datum.get((int)id);
+        ArticleDto articleDto = findById(id);
+
+        if (articleDto == null) return;
+
         articleDto.setTitle(title);
         articleDto.setBody(body);
 

@@ -36,7 +36,7 @@ public class DispatchServelet extends HttpServlet {
                         articleController.showWrite(rq);
                         break;
                     case "/user/article/delete":
-                        articleController.showDelete(rq);
+                        articleController.doDelete(rq);
                         break;
                     case "/user/article/modify":
                         articleController.showModify(rq);
