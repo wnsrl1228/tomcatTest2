@@ -20,3 +20,4 @@
     </div>
     <% } %>
 </div>
+<a href="/user/article/list" >글 목록 보기</a>

@@ -37,7 +37,6 @@
         </div>
     </div>
     <div>
-        <span>작성</span>
         <input type="submit" value="작성">
     </div>
 

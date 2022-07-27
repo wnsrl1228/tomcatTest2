@@ -12,6 +12,9 @@
     <% for ( ArticleDto article : articles ) { %>
     <li>
         <a href="/user/article/detail/free/<%=article.getId()%>"><%=article.getId()%>. <%=article.getTitle()%></a>
+        <a href="/user/article/delete/free/<%=article.getId()%>">삭제</a>
+        <a href="/user/article/modify/free/<%=article.getId()%>">수정</a>
     </li>
+
     <% } %>
 </ul>
