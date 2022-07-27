@@ -5,36 +5,57 @@
     ArticleDto article = (ArticleDto)request.getAttribute("article");
 %>
 
-<h1>게시물 수정페이지</h1>
+<%@ include file="../common/head.jspf"%>
 
 <script>
-    function formCheck(form){
-        // 쓸때없는 좌우공백 제거
-        form.query.value = form.query.value.trim();
-
-        // 길이체크
-        if(form.query.value.length == 0){
-            alert("입력해주세요");
-            form.query.focus;
+    function ArticleSave__submitForm(form) {
+        form.title.value = form.title.value.trim();
+        if ( form.title.value.length == 0 ) {
+            alert('제목을 입력해주세요.');
+            form.title.focus();
+            return;
+        }
+        form.body.value = form.body.value.trim();
+        if ( form.body.value.length == 0 ) {
+            alert('내용을 입력해주세요.');
+            form.body.focus();
             return;
         }
         form.submit();
     }
 </script>
-<div>
-    <% if ( article != null ) { %>
-    <form method="post" onsubmit="formCheck(this); return false;" action="/user/article/modify/free/<%=article.getId()%>">
-        <div>
-            ID : <%=article.getId()%>
-        </div>
-        <div>
-            TITLE : <input type="text" name="title" value=<%=article.getTitle()%>>
-        </div>
-        <div>
-            BODY : <input type="text" name="body" value=<%=article.getBody()%>>
-        </div>
-        <input type="submit" value="수정">
-    </form>
-    <% } %>
-</div>
-<a href="/user/article/list" >글 목록 보기</a>
+
+<section>
+    <div class="container px-3 mx-auto">
+        <h1 class="font-bold text-lg">게시물 수정</h1>
+        <form method="POST" onsubmit="ArticleSave__submitForm(this); return false;">
+            <div class="flex gap-3">
+                <span>번호</span>
+                <div>
+                    <%=article.getId()%>
+                </div>
+            </div>
+
+            <div class="flex gap-3">
+                <span>제목</span>
+                <div>
+                    <input name="title" type="text" maxlength="50" placeholder="제목을 입력해주세요." value="<%=article.getTitle()%>" />
+                </div>
+            </div>
+
+            <div class="flex gap-3">
+                <span>내용</span>
+                <div>
+                    <input name="body" type="text" maxlength="300" placeholder="내용을 입력해주세요." value="<%=article.getBody()%>" />
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <input class="hover:underline hover:text-[red] cursor-pointer" type="submit" value="수정" />
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<%@ include file="../common/foot.jspf"%>

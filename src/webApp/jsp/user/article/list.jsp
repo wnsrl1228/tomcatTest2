@@ -5,16 +5,23 @@
 <%
     List<ArticleDto> articles = (List<ArticleDto>)request.getAttribute("articles");
 %>
+<%@ include file="../common/head.jspf"%>
 
-<h1>게시물 리스트</h1>
+<section>
+    <div class="container px-3 mx-auto">
+        <h1 class="font-bold text-lg">게시물 리스트</h1>
 
-<ul>
-    <% for ( ArticleDto article : articles ) { %>
-    <li>
-        <a href="/user/article/detail/free/<%=article.getId()%>"><%=article.getId()%>. <%=article.getTitle()%></a>
-        <a onclick="if (!confirm('정말로 삭제하시겠습니까?')) return false" href="/user/article/delete/free/<%=article.getId()%>">삭제</a>
-        <a href="/user/article/modify/free/<%=article.getId()%>">수정</a>
-    </li>
+        <ul class="mt-5">
+            <% for ( ArticleDto article : articles ) { %>
+            <li class="flex">
+                <a class="w-[40px] hover:underline hover:text-[red]" href="/user/article/detail/free/<%=article.getId()%>"><%=article.getId()%></a>
+                <a class="flex-grow hover:underline hover:text-[red]" href="/user/article/detail/free/<%=article.getId()%>"><%=article.getTitle()%></a>
+                <a onclick="if ( !confirm('정말로 삭제하시겠습니까?') ) return false;" class="hover:underline hover:text-[red] mr-2" href="/user/article/delete/free/<%=article.getId()%>">삭제</a>
+                <a class="hover:underline hover:text-[red]" href="/user/article/modify/free/<%=article.getId()%>">수정</a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</section>
 
-    <% } %>
-</ul>
+<%@ include file="../common/foot.jspf"%>

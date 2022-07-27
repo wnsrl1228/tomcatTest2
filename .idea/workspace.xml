@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2d368c2-ec06-4aae-8f46-0e77f68d5e7b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/dto/ArticleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/dto/ArticleDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webApp/jsp/user/article/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/webApp/jsp/user/article/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webApp/jsp/user/article/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/webApp/jsp/user/article/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webApp/jsp/user/article/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/webApp/jsp/user/article/modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webApp/jsp/user/article/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/webApp/jsp/user/article/write.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/lionlike/tomcatTest2/src/webApp/jsp/user/article",
+    "last_opened_file_path": "F:/lionlike/tomcatTest2/src/webApp/jsp/user/common",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -59,6 +61,7 @@
       <recent name="com.ll.exam.article.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\lionlike\tomcatTest2\src\webApp\jsp\user\common" />
       <recent name="F:\lionlike\tomcatTest2\src\webApp\jsp\user\article" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -100,7 +103,7 @@
       <workItem from="1658727093040" duration="27000" />
       <workItem from="1658727253581" duration="3855000" />
       <workItem from="1658811875330" duration="11265000" />
-      <workItem from="1658884824071" duration="6391000" />
+      <workItem from="1658884824071" duration="7983000" />
     </task>
     <servers />
   </component>
